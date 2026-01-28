@@ -1,4 +1,4 @@
-<h1 align="center">
+<img width="2544" height="1444" alt="image" src="https://github.com/user-attachments/assets/f1cb3eaa-6684-4545-8a07-d45c0caacd08" /><h1 align="center">
 Towards Hallucination-Robust Diffusion Augmented Interactive
 Text-to-Image Retrieval</h1>
 
@@ -38,7 +38,7 @@ Download the pretrain model weights and the tokenizer model for retrieval task.
 ## 💾 Data Preparation
 Please download the required datasets from the following sources:
    - [`VisDial v1.0`](https://visualdialog.org/): The foundational dataset used for constructing our training data training and evaluation, consisting of images and multi-turn dialogues.
-   - [`DAI-TIR Dataset`](): This dataset contains the diffusion-augmented training samples described in our paper.The dataset is currently being prepared for release. We will update this section with the download link upon acceptance.
+   - [`DAI-TIR Dataset`](https://drive.google.com/drive/folders/1JhXEoeiuwKNsVlm6LdJXFcbxYMcaJTw6?usp=sharing): This dataset contains the diffusion-augmented training samples described in our paper.The dataset is currently being prepared for release. We will update this section with the download link upon acceptance.
    - [`ChatIR Benchmark`](https://github.com/levymsn/ChatIR?tab=readme-ov-file#table-of-contents): Four eval benchmark diglogue dataset with diverse dialogue styles (e.g., ChatGPT, Human).
    - [`PlugIR`](https://github.com/Saehyung-Lee/PlugIR): A dataset featuring concise, summary-style queries generated via an interactive pipeline.
 
@@ -75,7 +75,8 @@ To ensure the code runs correctly, you can organize your project directory as fo
 ├── dmcl_config.py
 ├── train.py
 ├── eval_dmcl.py
-└── README.md
+├──README.md
+└── ...
 ```
 
 ### Training
