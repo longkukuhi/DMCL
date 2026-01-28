@@ -1,5 +1,5 @@
-<img width="2544" height="1444" alt="image" src="https://github.com/user-attachments/assets/f1cb3eaa-6684-4545-8a07-d45c0caacd08" /><h1 align="center">
-Towards Hallucination-Robust Diffusion Augmented Interactive
+<h1 align="center">
+🧠Towards Hallucination-Robust Diffusion Augmented Interactive
 Text-to-Image Retrieval</h1>
 
 <p align = "center">
