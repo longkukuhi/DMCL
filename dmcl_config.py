@@ -4,19 +4,16 @@ class Config:
     
     # Experiment and Path Configuration
     log_base_dir = "experiments"
-    experiment_name = "beit3_ftcoco"  # Name of the experiment
+    experiment_name = "dmcl"  # Name of the experiment
 
-    dialogue_format = "VisDial"   # 'Summarized' or 'VisDial'
     dialogue_round = 10
     use_random_rounds = True
-    use_caption_masking = False
-    caption_masking_prob = 0.2
 
     train_json_path = './data/visdial_1.0_train.json' 
     val_corpus_json_path = './data/ChatIR_Protocol/Search_Space_val_50k.json'
     val_queries_path = './data/dialogues/VisDial_v1_0_queries_val.json'
     val_generated_image_dir = './data/generated_images/VisDial_v1_0_queries_val/your_generated_images'    
-    train_reference_image_dir = './data/query_images'
+    train_diffusion_image_dir = './data/query_images'
 
     beit3_checkpoint_path = "./model/beit3_base_itc_patch16_224.pth"
     beit3_tokenizer_path = "./model/beit3.spm"
@@ -41,7 +38,7 @@ class Config:
     input_size = 224  
     train_interpolation = 'bicubic'  
     randaug = False  
-    loss_components = ["ref_tgt", "text_tgt", "fused_tgt", "ref_text","dist_agreement"]
+    loss_components = ["diff_tgt", "text_tgt", "fused_tgt", "diff_text","dist_agreement"]
     loss_weights = [1.0,1.0,1.0,0.5,0.2] 
 
     use_learnable_weights = True  # Whether to convert loss_weights into learnable parameters
